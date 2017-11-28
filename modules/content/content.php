@@ -9,11 +9,25 @@
 
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?> xmlns="http://www.w3.org/1999/html">
 	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
+
+     <?php
+
+		if ( is_singular() ) :?>
+                <div class="breadcrumb1">
+
+                    <?php
+                    echo '<a href="'.home_url().'" rel="nofollow">Home</a>';?>
+                    <span><?php echo "&nbsp;&nbsp;&#62;&nbsp;&nbsp;";?></span>
+                    <?php $categories = get_the_category();
+                    if ( ! empty( $categories ) ) {
+                    echo '<a href="' . esc_url( get_category_link( $categories[0]->term_id ) ) . '">' . esc_html( $categories[0]->name ) . '</a>';
+                    }
+                    ?>
+                </div>
+
+			<?php the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
 			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
 		endif;
@@ -49,6 +63,6 @@
 	</div><!-- .entry-content -->
 
 	<footer class="entry-footer">
-		<?php ranker_entry_footer(); ?>
+		<?php ranker_entry_modified_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

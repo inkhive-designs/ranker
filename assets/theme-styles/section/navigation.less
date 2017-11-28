@@ -1,0 +1,92 @@
+.menu-bar{
+  background: @menu-bg;
+  .primary-menu-wrapper {
+    display: inline-block;
+    text-align: center;
+    ul li {
+      a{
+        padding: 14px 10px;
+        color: @onaccent;
+        @media screen and (max-width: 1200px){
+          padding: 14px 10px;
+        }
+      }
+      &:hover {
+        .sub-menu {
+          background: lighten(@accent, 10%);
+          border: 10px lighten(@accent, 6%) solid;
+          li{
+            &:nth-child(odd){
+            background: lighten(@accent,8%);
+              &:hover{
+                background: lighten(@accent,3%);
+                a{
+                  color: @onaccent;
+                }
+                ul{
+                  left: 100%;
+                  ul .sub-menu{
+                      opacity: 0;
+                    display: none;
+                  }
+                }
+              }
+          }
+            &:nth-child(even){
+              &:hover{
+                background: lighten(@accent,3%);
+                a{
+                  color: @onaccent;
+                }
+              }
+
+            }
+            //padding: 10px 10px;
+            background: lighten(@accent,6%);
+          }
+        }
+      }
+    }
+    ul{
+      text-align: left;
+    li a {
+      //margin-right: 14px;
+      text-transform: uppercase;
+      color: @onaccent;
+      font-size: 11px;
+      font-weight: lighter;
+      text-decoration: none;
+      &:hover {
+        color: @accent;
+      }
+      &:active {
+        color: @accent;
+      }
+    }
+  }
+    @media screen and (min-width: 767px) and (max-width: 991px) {
+      .main-navigation {
+        clear: both;
+        display: inline-block;
+        float: none;
+        width: auto;
+      }
+    }
+  }
+}
+
+.menu-bar .primary-menu-wrapper ul li:hover .sub-menu li:nth-child(odd):hover a{
+  color: @onaccent;
+  &:hover{
+    color: @onaccent;
+  }
+  &:active{
+    color: @accent;
+  }
+}
+.menu-bar .primary-menu-wrapper ul li:hover .sub-menu li:nth-child(even):hover a{
+  color: @onaccent;
+  &:hover{
+    color: @onaccent;
+  }
+}

@@ -1,0 +1,128 @@
+/* Single Posts Area */
+#primary {
+  margin-top: 20px;
+  article{
+    .entry-footer{
+      .cat-links,.tags-links{
+        display: block;
+        color: @accent;
+        font-size: 12px;
+        padding: 15px 0px;
+        font-weight: bold;
+        text-transform: uppercase;
+        a{
+          background: @header-bg;
+          color: @onaccent;
+          padding: 5px;
+          font-size: 11px;
+          &:hover{
+            background: @accent;
+            text-decoration: none;
+          }
+        }
+      }
+    }
+  }
+  .entry-header{
+    font-size: 20px;
+    font-weight: bold;
+    color: lighten(@accent,6%);
+    padding: 0px 30px;
+    margin: 30px 0px;
+  }
+  .ranker{
+    float: left;
+  }
+  .ranker-wrapper{
+      margin-bottom: 60px;
+    .entry-title{
+      margin: 0px;
+      color: darken(@content,10%);
+      text-transform: uppercase;
+      font-weight: 800;
+      @media screen and (max-width: 767px){
+        margin-top: 10px;
+      }
+    }
+    .out-thumb{
+      .cat{
+        padding: 5px 0px;
+        font-size: 20px;
+        font-weight: bold;
+        color: lighten(@accent,6%);
+        //margin-bottom: 20px;
+        margin-top: 0px;
+        // text-align: center;
+        text-transform: uppercase;
+      }
+      p.entry-excerpt{
+        font-size: 16px;
+      }
+    }
+  }
+
+    @media screen and (max-width: 767px){
+      article{
+      float: left;
+      overflow: hidden;
+      clear: both;
+    }
+  }
+}
+.edit-link {
+  display: inline-block;
+  float: right;
+}
+.single,.page {
+
+    .entry-content{
+      font-size: 16px;
+    }
+
+  #primary .entry-header {
+    margin: 0px;
+    .breadcrumb1{
+      padding: 15px 0px;
+      font-size: 12px;
+      text-transform: capitalize;
+    }
+    .breadcrumb1{
+      a {
+        color: lighten(@content, 50%);
+        font-weight: normal;
+      }
+      span{
+        color: lighten(@content, 50%);
+      }
+    }
+  }
+  #primary {
+  }
+  .entry-content,.entry-footer,.post-navigation {
+    padding: 0px 30px;
+  }
+  .entry-title{
+    margin: 0px;
+    color: darken(@content,10%);
+    text-transform: uppercase;
+    font-weight: 800;
+    @media screen and (max-width: 767px){
+      margin-top: 10px;
+    }
+  }
+  .entry-meta {
+    font-size: 12px;
+    .posted-on {
+      display: none;
+    }
+    .byline{
+      color: @content;
+      font-weight: normal;
+      text-transform: capitalize;
+    }
+    .author,.vcard a{
+      color: @accent;
+      font-weight: bold;
+    }
+  }
+}

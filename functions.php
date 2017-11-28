@@ -35,6 +35,10 @@ if ( ! function_exists( 'ranker_setup' ) ) :
 		 */
 		add_theme_support( 'title-tag' );
 
+		
+        add_image_size('ranker-sq-thumb', 600,600, true );
+        add_image_size('ranker-thumb', 540,450, true );
+        add_image_size('ranker-pop-thumb',542, 340, true );
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
@@ -44,7 +48,8 @@ if ( ! function_exists( 'ranker_setup' ) ) :
 
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
-			'menu-1' => esc_html__( 'Primary', 'ranker' ),
+			'primary-menu' => esc_html__( 'Primary', 'ranker' ),
+            'top-menu' => esc_html__( 'Top Menu', 'ranker' ),
 		) );
 
 		/*
@@ -95,6 +100,7 @@ function ranker_content_width() {
 }
 add_action( 'after_setup_theme', 'ranker_content_width', 0 );
 
+
 /**
  * Register widget area.
  *
@@ -110,6 +116,35 @@ function ranker_widgets_init() {
 		'before_title'  => '<h2 class="widget-title">',
 		'after_title'   => '</h2>',
 	) );
+
+    register_sidebar( array(
+        'name'          => __( 'Footer 1', 'ranker' ),
+        'id'            => 'footer-1',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title title-font">',
+        'after_title'   => '</h1>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Footer 2', 'ranker' ),
+        'id'            => 'footer-2',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title title-font">',
+        'after_title'   => '</h1>',
+    ) );
+
+    register_sidebar( array(
+        'name'          => __( 'Footer 3', 'ranker' ),
+        'id'            => 'footer-3',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</aside>',
+        'before_title'  => '<h1 class="widget-title title-font">',
+        'after_title'   => '</h1>',
+    ) );
+	
+	
 }
 add_action( 'widgets_init', 'ranker_widgets_init' );
 
@@ -118,6 +153,14 @@ add_action( 'widgets_init', 'ranker_widgets_init' );
  */
 function ranker_scripts() {
 	wp_enqueue_style( 'ranker-style', get_stylesheet_uri() );
+    wp_enqueue_style('ranker-title-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('ranker_title_font', 'Lato') ).':100,300,400,700' );
+
+    wp_enqueue_style('ranker-body-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('ranker_body_font', 'Open Sans') ).':100,300,400,700' );
+
+    //enqueue bootstrap and fontawesome css//
+    wp_enqueue_style('ranker-bootstrap',get_template_directory_uri().'/assets/bootstrap/css/bootstrap.min.css',true);
+    wp_enqueue_style('ranker-fa',get_template_directory_uri().'/assets/fa/css/font-awesome.css');
+    wp_enqueue_style('ranker-main',get_template_directory_uri().'/assets/theme-styles/css/default.css',true);
 
 	wp_enqueue_script( 'ranker-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 
@@ -130,6 +173,11 @@ function ranker_scripts() {
 add_action( 'wp_enqueue_scripts', 'ranker_scripts' );
 
 /**
+ * Include the Custom Functions of the Theme.
+ */
+require get_template_directory() . '/framework/theme-functions.php';
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -138,6 +186,10 @@ require get_template_directory() . '/inc/custom-header.php';
  * Custom template tags for this theme.
  */
 require get_template_directory() . '/inc/template-tags.php';
+/**
+ * Implement the Custom CSS Mods.
+ */
+require get_template_directory() . '/inc/css-mods.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
@@ -147,7 +199,7 @@ require get_template_directory() . '/inc/template-functions.php';
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+require get_template_directory() . '/framework/customizer/_init.php';
 
 /**
  * Load Jetpack compatibility file.
