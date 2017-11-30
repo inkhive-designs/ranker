@@ -1,6 +1,9 @@
 .menu-bar{
   background: @menu-bg;
   .primary-menu-wrapper {
+    @media screen and (max-width: 767px){
+      display: none;
+    }
     display: inline-block;
     text-align: center;
     ul li {
@@ -13,7 +16,7 @@
       }
       &:hover {
         .sub-menu {
-          background: lighten(@accent, 10%);
+          background: @accent;
           border: 10px lighten(@accent, 6%) solid;
           li{
             &:nth-child(odd){
@@ -54,6 +57,9 @@
       text-transform: uppercase;
       color: @onaccent;
       font-size: 11px;
+      @media screen and (max-width: 1200px){
+        font-size: 10px;
+      }
       font-weight: lighter;
       text-decoration: none;
       &:hover {
@@ -73,6 +79,94 @@
       }
     }
   }
+  //mobile menu
+  .slicknav_menu {
+    display: none;
+  }
+
+  @media screen and (max-width: 767px) {
+    .slicknav_menu {
+      display: block;
+      position: relative;
+
+      .slicknav_menutxt {
+        margin-top: 2px;
+      }
+    }
+
+    .slicknav_nav {
+      background: #333;
+      width: 100%;
+      top: 46px;
+      left: 0;
+      position: absolute;
+      z-index: 9;
+    }
+    #site-navigation ul.menu {
+      display: none;
+    }
+    .slicknav_nav {
+      .menu-desc {
+        display: none !important;
+      }
+      a {
+        color: darken(white,5%);
+        &:hover {
+          background: #333;
+          color: white;
+        }
+        .fa {
+          margin-right: 5px;
+        }
+      }
+      li:hover {
+        background: #333;
+        a { color: white; }
+      }
+      .slicknav_arrow {
+        display: none;
+      }
+    }
+    .slicknav_nav .slicknav_row:hover {
+      background: #333;
+    }
+    .slicknav_menu {
+      background: darken(#333,8%);
+      padding: 0 5px;
+    }
+    .slicknav_btn {
+      background: darken(#333,12%);
+      border: solid 1px darken(#333,5%);
+    }
+    .slicknav_menutxt {
+      color: white !important;
+      text-shadow: none !important;
+      font-weight: lighter !important;
+      float: right !important;
+    }
+    .slicknav_icon-bar {
+      background-color: #777 !important;
+      position: relative;
+      top: 2px;
+    }
+    .slicknav_menu .slicknav_icon {
+      position: relative;
+      left: -7px;
+    }
+
+
+  }
+  @media screen and (max-width: 767px){
+    #site-navigation{
+      display: none;
+    }
+    .primary-menu{
+      display: none;
+    }
+    .top-menu{
+      display: none;
+    }
+  }
 }
 
 .menu-bar .primary-menu-wrapper ul li:hover .sub-menu li:nth-child(odd):hover a{
@@ -88,5 +182,56 @@
   color: @onaccent;
   &:hover{
     color: @onaccent;
+  }
+}
+.panel {
+  position: fixed;
+  left: -15.625em; /*right or left and the width of your navigation panel*/
+  width: 15.625em; /*should match the above value*/
+  z-index: 99999;
+}
+.top-bar{
+  @media screen and (min-width: 767px){
+    .menu-link{
+      display: none;
+    }
+  }
+  @media screen and (max-width: 767px){
+    .top-menu{
+      display: none;
+    }
+  }
+}
+//mobile menu
+.menu-link{
+  color: @onaccent;
+  font-size: 18px;
+  &:hover{
+    color: @accent;
+  }
+}
+#menu{
+  background: @accent;
+  .menu-top-menu-container{
+    position: absolute;
+    top:10%;
+    ul{
+      padding: 0px;
+      li{
+        a {
+          color: @onaccent;
+          font-size: 16px;
+        }
+        list-style: none;
+        &:before{
+          content: "\f054";
+          font-family: "FontAwesome";
+          color: @onaccent;
+          font-size: 10px;
+          margin-right: 5px;
+          color: @onaccent;
+        }
+      }
+    }
   }
 }

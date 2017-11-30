@@ -15,7 +15,7 @@ get_header(); ?>
 		<?php
 		while ( have_posts() ) : the_post();
 
-			get_template_part( 'modules/content/content', get_post_type() );
+         get_template_part( 'modules/content/content', 'single' );
 
 			the_post_navigation();
 
@@ -26,7 +26,7 @@ get_header(); ?>
 
 		endwhile; // End of the loop.
 		?>
-
+        <?php if(have_posts()): ranker_pagination(); endif; ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 

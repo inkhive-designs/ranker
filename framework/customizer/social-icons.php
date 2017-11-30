@@ -4,7 +4,7 @@
 function ranker_customize_register_social( $wp_customize ){
     $wp_customize -> add_panel('ranker_header_panel',array(
             'title' => __('Header Settings' , 'ranker'),
-            'priority' => 10,
+            'priority' => 20,
     ));
     $wp_customize -> add_section('ranker_social_section', array(
             'title' => __('Social Icons','ranker'),

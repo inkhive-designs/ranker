@@ -14,6 +14,9 @@ function ranker_customize_register( $wp_customize ) {
     $wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
     $wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
     $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
+    $wp_customize->get_section( 'title_tagline')->title = __( 'Title, Tagline & Logo', 'ranker' );
+    $wp_customize->get_section( 'title_tagline')->priority = 10;
+
 
     if ( isset( $wp_customize->selective_refresh ) ) {
         $wp_customize->selective_refresh->add_partial( 'blogname', array(
@@ -29,9 +32,11 @@ function ranker_customize_register( $wp_customize ) {
 add_action( 'customize_register', 'ranker_customize_register' );
 
 require_once get_template_directory().'/framework/customizer/_sanitizations.php';
+require_once get_template_directory().'/framework/customizer/header.php';
 require_once get_template_directory().'/framework/customizer/_googlefonts.php';
 require_once get_template_directory().'/framework/customizer/social-icons.php';
 require_once get_template_directory().'/framework/customizer/layouts.php';
+require_once get_template_directory().'/framework/customizer/skins.php';
 
 /**
  * Render the site title for the selective refresh partial.

@@ -5,8 +5,8 @@ function ranker_customize_register_fonts( $wp_customize ) {
         'ranker_typo_options',
         array(
             'title'     => __('Google Web Fonts','ranker'),
-            'priority'  => 41,
-            'description' => __('Defaults: Roboto Condensed','ranker')
+            'priority'  => 40,
+            'panel'     => 'ranker_layout_panel',
         )
     );
 

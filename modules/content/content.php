@@ -36,6 +36,9 @@
 		<div class="entry-meta">
 			<?php ranker_posted_on(); ?>
 		</div><!-- .entry-meta -->
+            <div id="featured-image">
+                <?php the_post_thumbnail('full'); ?>
+            </div>
 		<?php
 		endif; ?>
 	</header><!-- .entry-header -->

@@ -15,9 +15,13 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'ranker' ); ?></a>
-	<header id="masthead" class="site-header">
-        <?php get_template_part('modules/header/top','bar'); ?>
-	</header><!-- #masthead -->
-    <?php get_template_part('modules/header/navigation'); ?>
+
+    <?php get_template_part('modules/header/masthead'); ?>
+
+    <?php get_template_part('modules/navigation/navigation'); ?>
+    <?php get_template_part('modules/navigation/mobile-menu'); ?>
+
+    <?php get_template_part('modules/header/header','image'); ?>
+
 
 	<div id="content" class="site-content container">

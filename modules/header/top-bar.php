@@ -30,6 +30,14 @@
                 ) );
                 ?>
             </nav><!-- #site-navigation -->
+            <a href="#mobile-navigation" class="menu-link">&#9776;</a>
+            <nav id="menu" class="panel col title-font" role="navigation">
+                <?php
+                //Display the Mobile Menu.
+                wp_nav_menu( array( 'theme_location' => 'mobile-menu',
+                    'menu-id'        => 'mobile-menu') ); ?>
+            </nav><!-- #site-navigation -->
+
         </div>
         <div class="col-md-1 col-sm-12 search-icon-wrapper">
             <div class="search-icon">

@@ -1,7 +1,4 @@
-<?php
-/**
- * Created by PhpStorm.
- * User: Gourav
- * Date: 11/29/2017
- * Time: 2:53 PM
- */
+<header id="masthead" class="site-header">
+    <?php get_template_part('modules/header/top','bar'); ?>
+    <?php get_template_part('modules/header/jumbosearch'); ?>
+</header><!-- #masthead -->

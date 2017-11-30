@@ -30,6 +30,10 @@
     padding: 0px 30px;
     margin: 30px 0px;
   }
+  #featured-image{
+    padding: 0px 30px;
+    margin: 30px 0px;
+  }
   .ranker{
     float: left;
   }
@@ -57,6 +61,7 @@
       }
       p.entry-excerpt{
         font-size: 16px;
+        color: @content;
       }
     }
   }
@@ -68,12 +73,58 @@
       clear: both;
     }
   }
+  .nav-links {
+    padding: 10px 0px;
+    padding-top: 20px;
+    border-bottom: solid 2px darken(@background, 10%);
+    overflow: auto;
+    .nav-previous{
+      padding: 0;
+      a{
+        color: @content;
+        font-weight: bold;
+        @media screen and (max-width: 767px){
+          font-size: 12px;
+          font-weight: normal;
+        }
+      }
+      &:before{
+        cursor: pointer;
+        padding: 0px 5px;
+        content: "\f060";
+        font-family: "FontAwesome";
+        font-size: 16px;
+        margin-right: 5px;
+        color: #D0090C;
+      }
+    }
+    .nav-next{
+      a{
+        color: @content;
+        font-size: 14px;
+        font-weight: bold;
+        @media screen and (max-width: 767px){
+          font-size: 12px;
+          font-weight: normal;
+        }
+      }
+      &:after{
+        cursor: pointer;
+        padding: 0px 5px;
+        content: "\f061";
+        font-family: "FontAwesome";
+        font-size: 16px;
+        margin-right: 5px;
+        color: #D0090C;
+      }
+    }
+  }
 }
 .edit-link {
   display: inline-block;
   float: right;
 }
-.single,.page {
+.single,.page,.archive,.category {
 
     .entry-content{
       font-size: 16px;
@@ -100,6 +151,7 @@
   }
   .entry-content,.entry-footer,.post-navigation {
     padding: 0px 30px;
+    color: @content;
   }
   .entry-title{
     margin: 0px;
@@ -125,4 +177,23 @@
       font-weight: bold;
     }
   }
+}
+.archive .entry-title a, .category .entry-title a, .page .entry-title a, .single .entry-title a{
+
+  margin: 0px;
+  color: darken(@content,10%);
+  text-transform: uppercase;
+  font-weight: 800;
+  @media screen and (max-width: 767px){
+    margin-top: 10px;
+  }
+}
+.archive #primary .page-title,.category #primary .page-title{
+  color: @accent;
+}
+.archive,.category #primary .page-title{
+  margin: 0px;
+}
+.archive,.category #primary .page-header{
+  margin-top: 0px;
 }

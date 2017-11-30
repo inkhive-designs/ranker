@@ -14,6 +14,22 @@ function ranker_custom_css_mods(){
     if ( get_theme_mod('ranker_body_font') ) :
         $custom_css .= "body, h2.site-description { font-family: ".esc_html( get_theme_mod('ranker_body_font','Arimo') )."; }";
     endif;
+
+    if(get_header_textcolor()):
+        $custom_css .= "#masthead .site-branding .site-title a{color: #".get_header_textcolor().";}";
+        endif;
+        
+    if ( get_theme_mod('ranker_header_desccolor','#FFFFFF') ) :
+        $custom_css .= "#masthead .site-branding p.site-description{ color: ".esc_html( get_theme_mod('ranker_header_desccolor','#FFFFFF') )."; }";
+    endif;
+
+
+    if(get_theme_mod('ranker_header_image_style')=='default'):
+        $custom_css .= ".header-image{ overflow: hidden !important; max-height:200px !important;}";
+        endif;
+
+
+
     wp_add_inline_style( 'ranker-main', wp_strip_all_tags($custom_css) );
 
 }

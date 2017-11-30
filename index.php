@@ -46,7 +46,7 @@ get_header(); ?>
                 get_template_part( 'template-parts/content', 'none' );
 
             endif; ?>
-
+            <?php if(have_posts()): ranker_pagination(); endif; ?>
         </main><!-- #main -->
     </div><!-- #primary -->
 

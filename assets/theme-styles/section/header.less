@@ -17,27 +17,41 @@
       max-height: 200px;
       max-width: 200px;
     }
-    .site-title a{
-      color: @onaccent;
-      font-weight: bold;
+    .site-title {
+      padding: 0px 10px;
+      text-align: left;
+      @media screen and (max-width: 991px){
+        text-align: center;
+      }
+      a {
+        color: @onaccent;
+        font-weight: bold;
+        // padding: 0px 10px;
+        text-align: left;
+        @media screen and (max-width: 991px){
+          text-align: center;
+        }
+      }
     }
     p.site-description{
       color: @onaccent;
+      padding: 0px 10px;
+      text-align: left;
     }
   }
-   .top-menu {
-    clear: both;
-    //float: none;
-    position: relative;
-     top: 50%;
-    left: 0;
-    right: 0;
-    -webkit-transform: translateY(50%);
-    transform: translateY(50%);
-   // display: inline-block;
-     .menu-top-menu-container{
-       display: inline-block;
-     }
+  .top-menu {
+    @media screen and (min-width: 991px){
+      clear: both;
+      position: absolute;
+      top:33px;
+    }
+    @media screen and (max-width: 767px){
+      display: none !important;
+    }
+
+    .menu-top-menu-container{
+      display: inline-block;
+    }
     ul li{
       a {
         text-decoration: none;
@@ -51,13 +65,14 @@
         padding: 6px 8px;
       }
     }
-     @media screen and (max-width: 767px) {
-       clear: both;
-       display: inline-block;
-       float: none;
-       width: auto;
-     }
+    @media screen and (max-width: 767px) {
+      clear: both;
+      display: inline-block;
+      float: none;
+      width: auto;
+    }
   }
+
   .main-navigation {
     clear: both;
     display: inline-block;
@@ -65,25 +80,28 @@
     width: 100%;
     text-align: center;
   }
+  nav.top-menu ul ul{
+    display: none !important;
+  }
 
   .search-icon{
-    display: inline-block;
-    float: right;
-    position: relative;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    transform: translateY(100%);
+    @media screen and (min-width: 991px){
+      clear: both;
+      position: relative;
+      top:33px;
+      float: right;
+    }
     @media screen and (max-width: 991px) {
-      transform: translateY(-50%);
+      //transform: translateY(-50%);
+      float: right;
+      transform: translateY(-119%);
     }
 
     i{
       font-weight: bolder;
       color: @onaccent;
       font-size: 14px;
-      padding: 6px 8px;
+      padding: 6px 6px;
     }
   }
 }
