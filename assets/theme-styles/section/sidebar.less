@@ -30,12 +30,16 @@
       padding: 0px !important;
 
       li {
+        transform: none;
         list-style: none;
         border-bottom: solid 1px darken(@background,5%);
         padding: 6px;
 
         &:last-child {
           border-bottom: none;
+        }
+        a{
+          text-decoration: none;
         }
       }
     }
@@ -75,7 +79,10 @@
       .transition( 0.4s all ease );
 
       &:hover {
+
         .transform(translateX(2px));
+        transform: none;
+        text-decoration: none;
       }
     }
   }

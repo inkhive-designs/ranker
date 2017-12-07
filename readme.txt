@@ -29,7 +29,7 @@ ranker includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
 
-= 1.0 - May 12 2015 =
+= 0.9 - December 12 2017 =
 * Initial release
 
 == Credits ==

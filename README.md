@@ -2,7 +2,7 @@
 
 **Contributors:** (inkhive)  
 **Requires at least:** WordPress 4.4  
-**Tested up to:** WordPress 4.8  
+**Tested up to:** WordPress 4.9.2  
 **Stable tag:** 1.1.1 
 **Version:** 0.9
 **License:** GPL v3  
@@ -13,7 +13,7 @@
 ## Description
 
 Ranker is a unique, ultra creative multipurpose WordPress theme. Ranker supports all basic features and is fully mobile friendly. And with Support for Custom Widgets, Featured Posts section, etc you can make this theme look even more beautiful on your website. 
-Demo Here: http://demo.inkhive.com/plum/
+Demo Here: http://demo.inkhive.com/ranker/
 
 ## Copyright
 
@@ -49,11 +49,16 @@ All the Images used in the Screenshot are Public Domain.
     2. Brown Yak on Green and Brown Grass Field
     https://www.pexels.com/photo/brown-yak-on-green-and-brown-grass-field-144234/
     https://images.pexels.com/photos/248771/pexels-photo-248771.jpeg
+    ================
     Sidebar images:
-    ===============
+    ================
     3. man-portrait-male-person-human
     https://pixabay.com/en/man-portrait-male-person-human-2785071/
-
+    ================
+    Header Image:
+    ================
+    4. black-and-white-blur-dark-light-210008
+https://www.pexels.com/photo/black-and-white-blur-dark-light-210008/
 ## Changelog
 
 ### 0.9

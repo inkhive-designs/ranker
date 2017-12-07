@@ -14,6 +14,11 @@
           padding: 14px 10px;
         }
       }
+      &:active{
+        a{
+          color: @accent;
+        }
+      }
       &:hover {
         .sub-menu {
           background: @accent;
@@ -21,7 +26,24 @@
           li{
             &:nth-child(odd){
             background: lighten(@accent,8%);
+              .sub-menu{
+                opacity: 0;
+              }
               &:hover{
+                .sub-menu{
+                  opacity: 1;
+                    li{
+                      .sub-menu {
+                        opacity: 0;
+                      }
+                      &:hover{
+                        .sub-menu {
+                          opacity: 1;
+                        }
+                      }
+
+                  }
+                }
                 background: lighten(@accent,3%);
                 a{
                   color: @onaccent;

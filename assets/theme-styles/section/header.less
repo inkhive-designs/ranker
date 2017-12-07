@@ -1,10 +1,4 @@
 #masthead{
-  //@media screen and (max-width: 767px){
-  //  .top-bar{
-  //    display: inline-block;
-  //    text-align: center;
-  //  }
-  //}
   background: @header-bg;
   .site-title-wrapper{
     text-align: center;
@@ -25,19 +19,26 @@
       img{
         max-height: 65px;
         width: auto;
+        padding: 5px;
       }
     }
     .site-title {
+      &:hover{
+        a {
+          text-decoration: none;
+        }
+      }
       padding: 0px 25px;
       text-align: left;
       font-size: 24px;
       margin-top: 10px;
+      margin-bottom: 6px;
       @media screen and (max-width: 991px){
         text-align: left;
       }
       a {
         color: darken(@onaccent,10%);
-        font-weight: 500;
+        font-weight: bold;
         // padding: 0px 10px;
         text-align: left;
         @media screen and (max-width: 991px){
@@ -54,11 +55,14 @@
   }
   //Top-menu
   .top-menu-wrapper{
-    text-align: center !important;
+    text-align: right !important;
    padding: 24px 0px 10px 0px;
     .search-icon{
       float: right;
       padding: 0px 10px;
+      @media screen and (min-width: 767px) and (max-width: 991px){
+        padding: 0px 6px;
+      }
     }
   }
   .top-menu {
@@ -69,6 +73,7 @@
 
     .menu-top-menu-container{
       display: inline-block;
+      padding-top: 3px;
     }
     ul li{
       a {
@@ -106,10 +111,8 @@
       @media screen and (min-width: 991px){
         position: relative;
         float: right;
-        //padding: 6px 8px;
       }
       @media screen and (max-width: 991px) {
-        //transform: translateY(-50%);
         float: right;
       }
 

@@ -8,7 +8,6 @@
  */
 
 ?>
-
 <article id="post-<?php the_ID(); ?>" <?php post_class('ranker');?>>
     <div class="ranker-wrapper">
     <div class="col-md-6 col-sm-6">

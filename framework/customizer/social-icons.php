@@ -1,6 +1,5 @@
 <?php
 //social-icons
-
 function ranker_customize_register_social( $wp_customize ){
     $wp_customize -> add_panel('ranker_header_panel',array(
             'title' => __('Header Settings' , 'ranker'),
@@ -23,7 +22,7 @@ function ranker_customize_register_social( $wp_customize ){
             'vimeo-square' => __('Vimeo' ,'ranker'),
             'youtube' => __('Youtube' ,'ranker'),
             'flickr' => __('Flickr' ,'ranker'),
-            'pinterest-p' => __('Pinterest' ,'ranker'),
+            'pinterest' => __('Pinterest' ,'ranker'),
     );
     $social_count = count($social_networks);
     
@@ -67,7 +66,7 @@ function ranker_customize_register_social( $wp_customize ){
                 'vimeo-square',
                 'youtube',
                 'flickr',
-                'pinterest-p');
+                'pinterest');
 
             if(in_array($input,$social_networks)):
                 return $input;

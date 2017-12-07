@@ -24,16 +24,14 @@
  */
 function ranker_custom_header_setup() {
     add_theme_support( 'custom-header', apply_filters( 'ranker_custom_header_args', array(
-        'default-image'          => get_template_directory_uri().'/assets/images/header.png',
+        'default-image'          => get_template_directory_uri().'/assets/images/header-img.jpeg',
         'default-text-color'     => '#ffffff',
-        'height'				 => 600,
-        'width'					 => 1440,
         'flex-height'            => true,
     ) ) );
     register_default_headers( array(
             'default-image'    => array(
-                'url'            => '%s/assets/images/header.png',
-                'thumbnail_url'    => '%s/assets/images/header.png',
+                'url'            => '%s/assets/images/header-img.jpeg',
+                'thumbnail_url'    => '%s/assets/images/header-img.jpeg',
                 'description'    => __('Default Header Image', 'ranker')
             )
         )

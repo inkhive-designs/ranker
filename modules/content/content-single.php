@@ -5,11 +5,8 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-
     <header class="entry-header">
         <?php the_title( '<h1 class="entry-title title-font">', '</h1>' ); ?>
-
-
         <div class="entry-meta">
             <?php ranker_posted_on(); ?>
         </div><!-- .entry-meta -->
@@ -22,9 +19,6 @@
             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><img src="<?php echo get_template_directory_uri()."/assets/images/placeholder2.jpg"; ?>"></a>
         <?php endif; ?>
     </div>
-
-
-
     <div class="entry-content">
         <?php the_content(); ?>
         <?php
