@@ -28,7 +28,9 @@ function ranker_custom_css_mods(){
         $custom_css .= ".header-image{ overflow: hidden !important; max-height:200px !important;}";
         endif;
 
-
+    if(display_header_text()):
+        $custom_css .= "#masthead .top-menu-wrapper {text-align: center!important; padding: 40px 0px 10px 0px !important;}";
+    endif;
 
     wp_add_inline_style( 'ranker-main', wp_strip_all_tags($custom_css) );
 

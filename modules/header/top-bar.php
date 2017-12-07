@@ -1,6 +1,6 @@
 <div class="top-bar">
     <div class="container">
-        <div class="col-md-3 col-sm-12 site-title-wrapper">
+        <div class="site-title-wrapper">
             <div class="site-branding">
                 <div id="site-logo">
                     <?php the_custom_logo();?>
@@ -20,7 +20,10 @@
                 endif;?>
             </div><!-- .site-branding -->
         </div>
-        <div class="col-md-8 col-sm-12 top-menu-wrapper">
+
+
+
+        <div class="top-menu-wrapper">
             <nav id="site-navigation" class="main-navigation top-menu">
                 <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'ranker' ); ?></button>
                 <?php
@@ -37,9 +40,6 @@
                 wp_nav_menu( array( 'theme_location' => 'mobile-menu',
                     'menu-id'        => 'mobile-menu') ); ?>
             </nav><!-- #site-navigation -->
-
-        </div>
-        <div class="col-md-1 col-sm-12 search-icon-wrapper">
             <div class="search-icon">
                 <!--                <i class="fa fa-search"></i>-->
                 <span id="searchicon" class="fa fa-search"></span>
