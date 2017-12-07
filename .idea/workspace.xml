@@ -2,59 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ebd8fcf6-cba4-47c6-b814-a4d8967f2e48" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/404.php" afterPath="$PROJECT_DIR$/404.php" />
-      <change beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change beforePath="$PROJECT_DIR$/assets/images/download.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/fancy_deboss.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/header.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/header.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/logo.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/overlay.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pattern.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pattern2.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pattern3.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/pattern4.jpg" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/images/shadow.png" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/js/jquery.slicknav.js" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/css/default.css" afterPath="$PROJECT_DIR$/assets/theme-styles/css/default.css" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/css/yellow.css" afterPath="$PROJECT_DIR$/assets/theme-styles/css/yellow.css" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/prepros-6.config" afterPath="$PROJECT_DIR$/assets/theme-styles/prepros-6.config" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/section/comments.less" afterPath="$PROJECT_DIR$/assets/theme-styles/section/comments.less" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/section/footer.less" afterPath="$PROJECT_DIR$/assets/theme-styles/section/footer.less" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/section/header.less" afterPath="$PROJECT_DIR$/assets/theme-styles/section/header.less" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/section/navigation.less" afterPath="$PROJECT_DIR$/assets/theme-styles/section/navigation.less" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/section/sidebar.less" afterPath="$PROJECT_DIR$/assets/theme-styles/section/sidebar.less" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/section/universal.less" afterPath="$PROJECT_DIR$/assets/theme-styles/section/universal.less" />
-      <change beforePath="$PROJECT_DIR$/assets/theme-styles/variables.less" afterPath="$PROJECT_DIR$/assets/theme-styles/variables.less" />
-      <change beforePath="$PROJECT_DIR$/comments.php" afterPath="$PROJECT_DIR$/comments.php" />
-      <change beforePath="$PROJECT_DIR$/footer.php" afterPath="$PROJECT_DIR$/footer.php" />
-      <change beforePath="$PROJECT_DIR$/framework/customizer/layouts.php" afterPath="$PROJECT_DIR$/framework/customizer/layouts.php" />
-      <change beforePath="$PROJECT_DIR$/framework/customizer/social-icons.php" afterPath="$PROJECT_DIR$/framework/customizer/social-icons.php" />
-      <change beforePath="$PROJECT_DIR$/framework/layouts/content-grid.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/framework/layouts/content-ranker.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/framework/theme-functions.php" afterPath="$PROJECT_DIR$/framework/theme-functions.php" />
       <change beforePath="$PROJECT_DIR$/functions.php" afterPath="$PROJECT_DIR$/functions.php" />
-      <change beforePath="$PROJECT_DIR$/header.php" afterPath="$PROJECT_DIR$/header.php" />
-      <change beforePath="$PROJECT_DIR$/inc/_custom-header.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/inc/custom-header.php" afterPath="$PROJECT_DIR$/inc/custom-header.php" />
-      <change beforePath="$PROJECT_DIR$/inc/template-tags.php" afterPath="$PROJECT_DIR$/inc/template-tags.php" />
-      <change beforePath="$PROJECT_DIR$/modules/content/content-none.php" afterPath="$PROJECT_DIR$/modules/content/content-none.php" />
-      <change beforePath="$PROJECT_DIR$/modules/content/content-page.php" afterPath="$PROJECT_DIR$/modules/content/content-page.php" />
-      <change beforePath="$PROJECT_DIR$/modules/content/content-ranker.php" afterPath="$PROJECT_DIR$/modules/content/content-ranker.php" />
-      <change beforePath="$PROJECT_DIR$/modules/content/content-single.php" afterPath="$PROJECT_DIR$/modules/content/content-single.php" />
-      <change beforePath="$PROJECT_DIR$/modules/content/content.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/modules/footer/bottom-bar.php" afterPath="$PROJECT_DIR$/modules/footer/bottom-bar.php" />
-      <change beforePath="$PROJECT_DIR$/modules/header/header-image.php" afterPath="$PROJECT_DIR$/modules/header/header-image.php" />
-      <change beforePath="$PROJECT_DIR$/modules/header/jumbosearch.php" afterPath="$PROJECT_DIR$/modules/header/jumbosearch.php" />
-      <change beforePath="$PROJECT_DIR$/modules/header/top-bar.php" afterPath="$PROJECT_DIR$/modules/header/top-bar.php" />
-      <change beforePath="$PROJECT_DIR$/modules/navigation/mobile-menu.php" afterPath="" />
-      <change beforePath="$PROJECT_DIR$/modules/navigation/navigation.php" afterPath="$PROJECT_DIR$/modules/navigation/primary-menu.php" />
-      <change beforePath="$PROJECT_DIR$/modules/social/social-icons.php" afterPath="$PROJECT_DIR$/modules/social/social-icons.php" />
-      <change beforePath="$PROJECT_DIR$/readme.txt" afterPath="$PROJECT_DIR$/readme.txt" />
-      <change beforePath="$PROJECT_DIR$/search.php" afterPath="$PROJECT_DIR$/search.php" />
-      <change beforePath="$PROJECT_DIR$/sidebar.php" afterPath="$PROJECT_DIR$/sidebar.php" />
-      <change beforePath="$PROJECT_DIR$/style.css" afterPath="$PROJECT_DIR$/style.css" />
+      <change beforePath="$PROJECT_DIR$/inc/jetpack.php" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/js/skip-link-focus-fix.js" afterPath="" />
+      <change beforePath="$PROJECT_DIR$/screenshot.png" afterPath="$PROJECT_DIR$/screenshot.png" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -77,8 +28,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>200</find>
-      <find>sear</find>
       <find>site-tit</find>
       <find>top</find>
       <find>site</find>
@@ -107,6 +56,8 @@
       <find>g</find>
       <find>get_theme</find>
       <find>get_theme_mod(</find>
+      <find>jet</find>
+      <find>jetpac</find>
     </findStrings>
     <replaceStrings>
       <replace>$x</replace>
@@ -170,10 +121,10 @@
         <option value="$PROJECT_DIR$/framework/layouts/content-ranker.php" />
         <option value="$PROJECT_DIR$/modules/content/content.php" />
         <option value="$PROJECT_DIR$/assets/theme-styles/variables.less" />
-        <option value="$PROJECT_DIR$/functions.php" />
         <option value="$PROJECT_DIR$/readme.txt" />
         <option value="$PROJECT_DIR$/inc/custom-header.php" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -211,21 +162,6 @@
             <path>
               <item name="ranker" type="b2602c69:ProjectViewProjectNode" />
               <item name="ranker" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ranker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ranker" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="assets" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ranker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ranker" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="framework" type="2a2b976b:PhpTreeStructureProvider$1" />
-            </path>
-            <path>
-              <item name="ranker" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ranker" type="2a2b976b:PhpTreeStructureProvider$1" />
-              <item name="modules" type="2a2b976b:PhpTreeStructureProvider$1" />
             </path>
           </expand>
           <select />
@@ -347,12 +283,12 @@
       <workItem from="1511930069281" duration="26535000" />
       <workItem from="1511958254880" duration="1056000" />
       <workItem from="1512016523872" duration="19043000" />
-      <workItem from="1512629427704" duration="24200000" />
+      <workItem from="1512629427704" duration="24932000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="185995000" />
+    <option name="totallyTimeSpent" value="186727000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -416,40 +352,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/framework/layouts/content-ranker.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="64" lean-forward="false" selection-start-line="10" selection-start-column="64" selection-end-line="10" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/modules/content/content-page.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="12" column="66" lean-forward="true" selection-start-line="12" selection-start-column="66" selection-end-line="12" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/theme-functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
-          <folding>
-            <element signature="e#605#676#0#PHP" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/framework/customizer/social-icons.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="14" lean-forward="false" selection-start-line="1" selection-start-column="14" selection-end-line="1" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/framework/customizer/skins.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -699,14 +601,6 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="38" column="44" lean-forward="false" selection-start-line="38" selection-start-column="44" selection-end-line="38" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/modules/content/content-ranker.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -771,6 +665,50 @@
             <folding />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="421">
+          <caret line="213" column="0" lean-forward="true" selection-start-line="213" selection-start-column="0" selection-end-line="213" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/framework/theme-functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding>
+            <element signature="e#605#676#0#PHP" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/inc/template-tags.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/external.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/customizer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
