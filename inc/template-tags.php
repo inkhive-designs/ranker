@@ -157,13 +157,11 @@ if ( ! function_exists( 'ranker_entry_footer' ) ) :
     
     //comments function
     function ranker_comment( $comment, $args, $depth ) {
-        $GLOBALS['comment'] = $comment;
-
         if ( 'pingback' == $comment->comment_type || 'trackback' == $comment->comment_type ) : ?>
 
             <li id="comment-<?php comment_ID(); ?>" <?php comment_class(); ?>>
             <div class="comment-body">
-                <?php _e( 'Pingback:', 'ranker' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'ranker' ), '<span class="edit-link">', '</span>' ); ?>
+                <?php esc_html_e( 'Pingback:', 'ranker' ); ?> <?php comment_author_link(); ?> <?php edit_comment_link( __( 'Edit', 'ranker' ), '<span class="edit-link">', '</span>' ); ?>
             </div>
 
         <?php else : ?>
@@ -178,13 +176,13 @@ if ( ! function_exists( 'ranker_entry_footer' ) ) :
                         <?php printf( '%s', sprintf( '<cite class="fn">%s</cite>', get_comment_author_link() ) ); ?>
                         <a href="<?php echo esc_url( get_comment_link( $comment->comment_ID ) ); ?>">
                             <time datetime="<?php comment_time( 'c' ); ?>">
-                                <?php printf( _x( '%1$s', '1: date', 'ranker' ), get_comment_date() ); ?>
+                                <?php printf( '%1$s', get_comment_date() ); ?>
                             </time>
                         </a>
                     </div><!-- .comment-metadata -->
 
                     <?php if ( '0' == $comment->comment_approved ) : ?>
-                        <p class="comment-awaiting-moderation"><?php _e( 'Your comment is awaiting moderation.', 'ranker' ); ?></p>
+                        <p class="comment-awaiting-moderation"><?php esc_html_e( 'Your comment is awaiting moderation.', 'ranker' ); ?></p>
                     <?php endif; ?>
                 </footer><!-- .comment-meta -->
 
