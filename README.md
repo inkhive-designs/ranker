@@ -52,13 +52,12 @@ All the Images used in the Screenshot are Public Domain.
     ================
     Sidebar images:
     ================
-    3. man-portrait-male-person-human
-    https://pixabay.com/en/man-portrait-male-person-human-2785071/
-    ================
+    3. man-portrait-old-artist
+    https://www.pexels.com/photo/man-portrait-old-artist-25758/    ================
     Header Image:
     ================
     4. mountain-island-landscape-photo-162969
-https://www.pexels.com/photo/mountain-island-landscape-photo-162969/
+    https://www.pexels.com/photo/mountain-island-landscape-photo-162969/
 
 ## Changelog
 
