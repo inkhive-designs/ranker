@@ -16,3 +16,18 @@ body {
 .header-image-wrapper{
   text-align: center !important;
 }
+.header-image{
+  margin: auto;
+  &:after{
+    display: block;
+    position: relative;
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 0, lighten(@accent,55%), @onaccent 100%);
+    margin-top: -150px;
+    @media screen and (max-width: 767px){
+      margin-top: -82px;
+    }
+    height: 150px;
+    width: 100%;
+    content: '';
+  }
+}

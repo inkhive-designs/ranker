@@ -57,8 +57,9 @@ All the Images used in the Screenshot are Public Domain.
     ================
     Header Image:
     ================
-    4. black-and-white-blur-dark-light-210008
-https://www.pexels.com/photo/black-and-white-blur-dark-light-210008/
+    4. mountain-island-landscape-photo-162969
+https://www.pexels.com/photo/mountain-island-landscape-photo-162969/
+
 ## Changelog
 
 ### 0.9
