@@ -19,7 +19,6 @@
 
     <?php get_template_part('modules/header/masthead'); ?>
     <?php get_template_part('modules/navigation/primary-menu'); ?>
-    <?php get_template_part('modules/navigation/mobile-menu'); ?>
     <?php get_template_part('modules/header/header','image'); ?>
 
 	<div id="content" class="site-content container">

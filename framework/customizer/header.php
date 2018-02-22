@@ -14,7 +14,7 @@ function ranker_customize_register_header( $wp_customize ) {
     $wp_customize->add_section(
         'ranker_header_options',
         array(
-            'title'     => __('Header Image on Phones','ranker'),
+            'title'     => __('Header Image Style','ranker'),
             'priority'  => 90,
             'panel' => 'ranker_header_panel',
         )

@@ -4,7 +4,7 @@
 **Requires at least:** WordPress 4.4  
 **Tested up to:** WordPress 4.9.2  
 **Stable tag:** 1.1.1 
-**Version:** 0.9
+**Version:** 1.0.0
 **License:** GPL v3  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 **Tags:** custom-background, two-columns, one-column, custom-colors, flexible-header, theme-options, right-sidebar, grid-layout, custom-menu, threaded-comments, translation-ready, featured-images, blog, full-width-template, e-commerce, footer-widgets, entertainment, photography, featured-image-header
@@ -64,3 +64,13 @@ All the Images used in the Screenshot are Public Domain.
 ### 0.9
 
 * Initial Release.
+
+### 1.0.0
+
+* Jumbosearch bug fixed.
+* Mobile menu issue fixed.
+* Google Fonts issue fixed.
+* Big slide issue fixed.
+* Site Title and Description bug fixed.
+* Archieve and Category Page bug fixed.
+* Other Minor bug fixed.

@@ -5,29 +5,6 @@
 /*
  ** Determine Sidebar and Primary Width
  */
-
-function ranker_primary_class(){
-    $sw = get_theme_mod('ranker_sidebar_width_setting',4);
-    $class = "col-md-".(12-$sw);
-        if(!ranker_load_sidebar())
-            $class = "col-md-12";
-        echo "$class";
-}
-add_action('ranker_primary_width','ranker_primary_class');
-
-/*
- **
- */
-function ranker_secondary_class() {
-    $sw = get_theme_mod('ranker_sidebar_width_setting',4);
-    $class = "col-md-".$sw;
-
-    echo $class;
-}
-add_action('ranker_secondary-width', 'ranker_secondary_class');
-
-
-
 //pagination
 /*
  * Pagination Function. Implements core paginate_links function.

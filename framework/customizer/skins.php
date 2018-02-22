@@ -2,10 +2,24 @@
 function ranker_customize_register_skins($wp_customize){
     $wp_customize->get_section('colors')->title = __('Theme Skins & Colors','ranker');
     $wp_customize->get_section('colors')->panel = 'ranker_layout_panel';
-    $wp_customize->get_control('header_textcolor')->label = __('Site Title Color','ranker');
+
+    $wp_customize->add_setting('ranker_site_titlecolor', array(
+        'default'     => '#ffffff',
+        'sanitize_callback' => 'sanitize_hex_color',
+    ));
+
+    $wp_customize->add_control(new WP_Customize_Color_Control(
+            $wp_customize,
+            'ranker_site_titlecolor', array(
+            'label' => __('Site Title Color','ranker'),
+            'section' => 'colors',
+            'settings' => 'ranker_site_titlecolor',
+            'type' => 'color'
+        ) )
+    );
 
     $wp_customize->add_setting('ranker_header_desccolor', array(
-        'default'     => '#FFFFFF',
+        'default'     => '#ffffff',
         'sanitize_callback' => 'sanitize_hex_color',
     ));
 
@@ -18,6 +32,7 @@ function ranker_customize_register_skins($wp_customize){
             'type' => 'color'
         ) )
     );
+
     //Ranker Skins
 
     $wp_customize -> add_setting('ranker_skin',array(

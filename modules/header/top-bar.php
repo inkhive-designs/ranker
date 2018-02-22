@@ -27,6 +27,7 @@
                 ) );
                 ?>
             </nav><!-- #site-navigation -->
+            <div class="mobilemenu">
             <a href="#mobile-navigation" class="menu-link">&#9776;</a>
             <nav id="menu" class="panel col title-font" role="navigation">
                 <?php
@@ -34,6 +35,7 @@
                 wp_nav_menu( array( 'theme_location' => 'mobile-menu',
                     'menu-id'        => 'mobile-menu') ); ?>
             </nav><!-- #site-navigation -->
+            </div>
             <div class="search-icon">
                 <span id="searchicon" class="fa fa-search"></span>
             </div>
