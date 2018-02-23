@@ -37,7 +37,7 @@
             </nav><!-- #site-navigation -->
             </div>
             <div class="search-icon">
-                <span id="searchicon" class="fa fa-search"></span>
+                <span id="searchicon" class="fas fa-search"></span>
             </div>
         </div>
 

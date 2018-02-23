@@ -74,3 +74,8 @@ All the Images used in the Screenshot are Public Domain.
 * Site Title and Description bug fixed.
 * Archieve and Category Page bug fixed.
 * Other Minor bug fixed.
+
+### 1.0.1
+
+* Font Awesome Updated
+* Fixed Social Icons

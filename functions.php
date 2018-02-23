@@ -156,14 +156,14 @@ add_action( 'widgets_init', 'ranker_widgets_init' );
 function ranker_scripts() {
 	wp_enqueue_style( 'ranker-style', get_stylesheet_uri() );
 
-    wp_enqueue_style('ranker-title-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('ranker_title_font', 'Lato') ).':100,300,400,700' );
+    wp_enqueue_style('ranker-title-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('ranker_title_font', 'Arimo') ).':400,700' );
 
-    wp_enqueue_style('ranker-body-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('ranker_body_font', 'Open Sans') ).':100,300,400,700' );
+    wp_enqueue_style('ranker-body-font', '//fonts.googleapis.com/css?family='.str_replace(" ", "+", get_theme_mod('ranker_body_font', 'Roboto Condensed') ).':300,400,700' );
 
     //enqueue bootstrap and fontawesome css//
     wp_enqueue_style('ranker-bootstrap',get_template_directory_uri().'/assets/bootstrap/css/bootstrap.min.css',true);
 
-    wp_enqueue_style('ranker-fa',get_template_directory_uri().'/assets/fa/css/font-awesome.css');
+    wp_enqueue_style('ranker-fa',get_template_directory_uri().'/assets/fa/css/fontawesome-all.min.css');
 
     wp_enqueue_style( 'ranker-main-theme-style', get_template_directory_uri() . '/assets/theme-styles/css/'.get_theme_mod('ranker_skin', 'default').'.css' );
 

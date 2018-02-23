@@ -13,16 +13,15 @@ function ranker_customize_register_social( $wp_customize ){
 
     $social_networks = array(
             'none' => __('-' ,'ranker'),
-            'facebook' => __('Facebook' ,'ranker'),
+            'facebook-f' => __('Facebook' ,'ranker'),
             'twitter' => __('Twitter' ,'ranker'),
-            'google-plus' => __('Google Plus' ,'ranker'),
-            'instagram' => __('instagram' ,'ranker'),
-            'rss' => __('RSS Feeds' ,'ranker'),
+            'google-plus-g' => __('Google Plus' ,'ranker'),
+            'instagram' => __('Instagram' ,'ranker'),
             'vine' => __('Vine' ,'ranker'),
-            'vimeo-square' => __('Vimeo' ,'ranker'),
+            'vimeo-v' => __('Vimeo' ,'ranker'),
             'youtube' => __('Youtube' ,'ranker'),
             'flickr' => __('Flickr' ,'ranker'),
-            'pinterest' => __('Pinterest' ,'ranker'),
+            'pinterest-p' => __('Pinterest' ,'ranker'),
     );
     $social_count = count($social_networks);
     
@@ -57,16 +56,15 @@ function ranker_customize_register_social( $wp_customize ){
         function ranker_sanitize_social($input){
             $social_networks = array(
                 'none' ,
-                'facebook',
+                'facebook-f',
                 'twitter',
-                'google-plus',
+                'google-plus-g',
                 'instagram',
-                'rss',
                 'vine',
-                'vimeo-square',
+                'vimeo-v',
                 'youtube',
                 'flickr',
-                'pinterest');
+                'pinterest-p');
 
             if(in_array($input,$social_networks)):
                 return $input;
