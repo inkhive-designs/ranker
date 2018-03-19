@@ -174,8 +174,9 @@ function ranker_scripts() {
 	}
 	//custom js
     wp_enqueue_script( 'ranker-custom-js', get_template_directory_uri() . '/assets/js/custom.js', array('jquery-masonry'), false, true );
-
-	wp_enqueue_script( 'bigslide-js', get_template_directory_uri() . '/js/bigSlide.min.js');
+	
+	//big-slide js
+	wp_enqueue_script( 'bigslide-js', get_template_directory_uri() . '/js/jquery.big-slide.js');
 
 	//External js
     wp_enqueue_script( 'ranker-external', get_template_directory_uri() . '/js/external.js', array('jquery'), '20120206', true );
