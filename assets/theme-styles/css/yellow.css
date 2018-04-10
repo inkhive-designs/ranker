@@ -234,7 +234,7 @@ body {
 #searchicon:before {
   content: "\f002";
   font-family: "Font Awesome 5 Free";
-  font-weight: 300;
+  font-weight: 900;
   font-size: 24px;
   color: #ffffff;
 }
@@ -1173,7 +1173,7 @@ Nav Panel
 #secondary .widget_nav_menu ul li:before {
   content: "\f054";
   font-family: "Font Awesome 5 Free";
-  font-weight: 300;
+  font-weight: 900;
   color: #ffffff;
   font-size: 10px;
   margin-right: 5px;
@@ -1213,7 +1213,7 @@ Nav Panel
   font-size: 14px !important;
   text-transform: uppercase;
   font-weight: lighter;
-  color: #d0090c;
+  color: white;
   padding: 7px 5px;
   margin-bottom: 5px;
   display: inline-block;

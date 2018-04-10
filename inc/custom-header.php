@@ -24,7 +24,7 @@
  */
 function ranker_custom_header_setup() {
     add_theme_support( 'custom-header', apply_filters( 'ranker_custom_header_args', array(
-        'default-image'          => get_template_directory_uri().'/assets/images/header-img.jpeg',
+        'default-image'          => esc_url(get_template_directory_uri().'/assets/images/header-img.jpeg'),
         'default-text-color'     => '#ffffff',
         'flex-height'            => true,
     ) ) );

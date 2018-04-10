@@ -16,7 +16,7 @@
         <?php if (has_post_thumbnail()) : ?>
             <a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><?php the_post_thumbnail('ranker-pop-thumb'); ?></a>
         <?php else: ?>
-            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><img src="<?php echo get_template_directory_uri()."/assets/images/placeholder2.jpg"; ?>"></a>
+            <a href="<?php the_permalink() ?>" title="<?php the_title_attribute() ?>"><img src="<?php echo esc_url(get_template_directory_uri()."/assets/images/placeholder2.jpg"); ?>"></a>
         <?php endif; ?>
     </div>
     <div class="entry-content">
