@@ -16,8 +16,6 @@ function ranker_customize_register( $wp_customize ) {
     $wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
     $wp_customize->get_section( 'title_tagline')->title = __( 'Title, Tagline & Logo', 'ranker' );
     $wp_customize->get_section( 'title_tagline')->priority = 10;
-    $wp_customize->remove_control('display_header_text');
-    $wp_customize->remove_control('header_textcolor');
 
 
     if ( isset( $wp_customize->selective_refresh ) ) {

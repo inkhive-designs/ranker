@@ -5,47 +5,21 @@
   text-align: center;
   width: 100%;
   clear: both;
-  ul {
-    list-style: none;
-    display: inline-block;
-    text-align: center;
-    margin-bottom: 0;
-    margin-left: 0px;
-    & > li {
-      display: inline;
-      & > a {
+  a {
         color: darken(@accent, 1%);
         .transition(all 0.4s ease);
-      }
-      & > a:hover {
-        color: @accent;
-        background: @background;
-      }
+        padding: 6px 9px;
+        border: solid 1px @accent;
+        text-decoration: none;
     }
-  }
+    a:hover {
+        color: @background;
+        background: @accent;
+    }
   .current {
-    background: @accent;
+    background: desaturate(@accent, 20%);
     color: @onaccent;
     cursor: auto;
-    &:hover {
-      background: @accent;
-      color: @onaccent;
-    }
-  }
-}
-.pagination ul &>li &>a, .pagination ul &>li &>span {
-  float: left;
-  padding: 4px 12px;
-  line-height: 20px;
-  text-decoration: none;
-  margin-right: 5px;
-  background-color: @background;
-  border: 1px solid fade(@accent,50%);
-  border-radius: 3px;
-  display: inline-block;
-  color: @content;
-  &:hover {
-    background: @accent;
-    color: @onaccent;
+    padding: 8px 11px;
   }
 }

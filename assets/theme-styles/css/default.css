@@ -864,54 +864,26 @@ Nav Panel
   width: 100%;
   clear: both;
 }
-.pagination ul {
-  list-style: none;
-  display: inline-block;
-  text-align: center;
-  margin-bottom: 0;
-  margin-left: 0px;
-}
-.pagination ul > li {
-  display: inline;
-}
-.pagination ul > li > a {
+.pagination a {
   color: #cb090c;
   transition: all 0.4s ease;
   -webkit-transition: all 0.4s ease;
   -moz-transition: all 0.4s ease;
   -ms-transition: all 0.4s ease;
   -o-transition: all 0.4s ease;
+  padding: 6px 9px;
+  border: solid 1px #d0090c;
+  text-decoration: none;
 }
-.pagination ul > li > a:hover {
-  color: #d0090c;
-  background: #ffffff;
+.pagination a:hover {
+  color: #ffffff;
+  background: #d0090c;
 }
 .pagination .current {
-  background: #d0090c;
+  background: #ba1f21;
   color: #ffffff;
   cursor: auto;
-}
-.pagination .current:hover {
-  background: #d0090c;
-  color: #ffffff;
-}
-.pagination ul  > li  > a,
-.pagination ul  > li  > span {
-  float: left;
-  padding: 4px 12px;
-  line-height: 20px;
-  text-decoration: none;
-  margin-right: 5px;
-  background-color: #ffffff;
-  border: 1px solid rgba(208, 9, 12, 0.5);
-  border-radius: 3px;
-  display: inline-block;
-  color: #2b2b2b;
-}
-.pagination ul  > li  > a:hover,
-.pagination ul  > li  > span:hover {
-  background: #d0090c;
-  color: #ffffff;
+  padding: 8px 11px;
 }
 /* --------------- comments -------------- */
 #respond h3#reply-title {
