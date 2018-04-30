@@ -6,7 +6,7 @@ Ranker is distributed under the terms of the GNU GPL
 **Requires at least:** WordPress 4.4  
 **Tested up to:** WordPress 4.9.2  
 **Stable tag:** 1.1.1 
-**Version:** 1.0.5
+**Version:** 1.0.6
 **License:** GPL v3  
 **License URI:** http://www.gnu.org/licenses/gpl-3.0.html  
 **Tags:** custom-background, two-columns, one-column, custom-colors, flexible-header, theme-options, right-sidebar, grid-layout, custom-menu, threaded-comments, translation-ready, featured-images, blog, full-width-template, e-commerce, footer-widgets, entertainment, photography, featured-image-header
@@ -38,6 +38,18 @@ This theme is 100% GPL. And any external resources used and bundled with the the
 4. Modernizer 
  	        - MIT and BSD
             - http://modernizr.com
+            
+5. SlickNav
+			- MIT License
+			- http://slicknav.io/
+			
+6. Responsive menu
+			- None
+			- https://github.com/mattkersley/Responsive-Menu
+			
+7. BigSlide
+			- MIT License
+			- http://ascott1.github.io/bigSlide.js/
             
             
 All Other Resources, apart from the ones mentioned above have been created by me fall under GPL v3 license of the theme.	

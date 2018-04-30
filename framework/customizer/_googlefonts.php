@@ -16,7 +16,7 @@ function ranker_customize_register_fonts( $wp_customize ) {
     $wp_customize->add_setting(
         'ranker_title_font',
         array(
-            'default'=> 'Roboto Condensed',
+            'default'=> 'Arimo',
             'sanitize_callback' => 'ranker_sanitize_gfont'
         )
     );
@@ -40,7 +40,7 @@ function ranker_customize_register_fonts( $wp_customize ) {
 
     $wp_customize->add_setting(
         'ranker_body_font',
-        array(	'default'=> 'Verdana',
+        array(	'default'=> 'Roboto Condensed',
             'sanitize_callback' => 'ranker_sanitize_gfont' )
     );
 
